@@ -71,6 +71,10 @@ const GameOfLife = () => {
       <Helmet>
         <title> Game Of Life </title>
         <meta
+          name='title'
+          content="Conway's Game Of Life - made with React JS"
+        />
+        <meta
           name='description'
           content="Conway's Game Of Life - made with React JS"
         />

@@ -12,6 +12,7 @@ const Tasks = () => {
       <Helmet>
         <title> My Tasks </title>
         <meta name='description' content='A web app that saves your tasks' />
+        <meta name='title' content='My Tasks' />
       </Helmet>
       <TaskContextProvider>
         <NavBar />

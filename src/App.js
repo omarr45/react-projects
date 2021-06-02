@@ -16,6 +16,12 @@ const App = () => {
         <meta
           name='description'
           content='Collection of projects developed using React JS and various libraries'
+          data-react-helmet='true'
+        />
+        <meta
+          name='title'
+          content='Collection of projects developed using React JS and various libraries'
+          data-react-helmet='true'
         />
       </Helmet>
 
