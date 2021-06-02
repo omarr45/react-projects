@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const Card = ({ img = 'https://picsum.photos/200', title, path, disabled }) => {
+const Card = ({ img = './assets/soon.png', title, path, disabled }) => {
   return (
     <div className={`card ${disabled && 'disabled-link'}`}>
       <Link to={path}>
