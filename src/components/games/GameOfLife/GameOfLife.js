@@ -2,8 +2,8 @@ import { useCallback, useRef, useState } from 'react';
 
 import produce from 'immer';
 
-const numRows = 30;
-const numCols = 30;
+const numRows = 40;
+const numCols = Math.trunc(window.innerWidth / 30);
 
 const operations = [
   [0, 1],
@@ -66,7 +66,7 @@ const GameOfLife = () => {
   }, []);
 
   return (
-    <div className='GameOfLife'>
+    <div className='GameOfLife' id='GameOfLife'>
       <h1 className='ttl'>Conway's Game Of Life</h1>
       <div className='buttons-container'>
         <button
