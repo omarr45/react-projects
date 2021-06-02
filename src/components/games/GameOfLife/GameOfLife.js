@@ -70,10 +70,7 @@ const GameOfLife = () => {
     <div className='GameOfLife' id='GameOfLife'>
       <Helmet>
         <title> Game Of Life </title>
-        <meta
-          name='title'
-          content="Conway's Game Of Life - made with React JS"
-        />
+        <meta name='title' content='Game Of Life' />
         <meta
           name='description'
           content="Conway's Game Of Life - made with React JS"
