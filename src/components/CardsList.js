@@ -9,8 +9,6 @@ const CardsList = (props) => {
         img='./assets/GOL.png'
       />
       <Card title='Coming Soon...' path='/' img='./assets/soon.png' disabled />
-      <Card title='Coming Soon...' path='/' img='./assets/soon.png' disabled />
-      <Card title='Coming Soon...' path='/' img='./assets/soon.png' disabled />
     </div>
   );
 };
