@@ -1,5 +1,6 @@
 import { useCallback, useRef, useState } from 'react';
 
+import { Helmet } from 'react-helmet';
 import produce from 'immer';
 
 const numRows = 40;
@@ -67,7 +68,19 @@ const GameOfLife = () => {
 
   return (
     <div className='GameOfLife' id='GameOfLife'>
+      <Helmet>
+        <title> Game Of Life </title>
+        <meta
+          name='description'
+          content="Conway's Game Of Life - made with React JS"
+        />
+      </Helmet>
       <h1 className='ttl'>Conway's Game Of Life</h1>
+
+      <div className='portrait-render'>
+        <p>Consider exploring this page in landscape mode for a square grid</p>
+      </div>
+
       <div className='buttons-container'>
         <button
           onClick={() => {

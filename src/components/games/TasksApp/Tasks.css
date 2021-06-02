@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+:root {
+    --bg-accent: #0078e3;
+    --bg-color: #2578c0;
+    --bg-dark: #0460b1;
+    --grey: rgba(0, 0, 0, 0.3);
+    --darkblue: rgba(14, 24, 36, 0.9);
+    --black: #222;
+    --white: #fff;
+}
+
+.tasks-navbar {
+    padding: 10px 20px;
+    text-align: center;
+    color: var(--white);
+    background: var(--bg-accent);
+}
+
+.tasks-navbar p {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.tasks-navbar h1 {
+    margin: 10px 0;
+    font-size: 3.4rem;
+}
+
+.tasks-wrapper {
+    background-color: var(--darkblue);
+    padding: 20px;
+    margin: 3rem auto;
+    width: clamp(400px, 60%, 900px);
+}
+
+.task-list {
+    margin: 20px auto;
+    width: 100%;
+}
+
+.task-list ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.task-list li {
+    background: var(--bg-color);
+    border-radius: 4px;
+    padding: 15px;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.task-list li:hover {
+    opacity: 0.7;
+    text-decoration: line-through;
+}
+
+.task-list .title {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.task-list .body {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+.empty {
+    margin: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.tasks-form {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.tasks-form input[type='text'] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 6px 0;
+    background: transparent;
+    color: var(--white);
+    font-size: 1.2em;
+    border: 2px solid var(--bg-accent);
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+.tasks-form input[type='submit'] {
+    height: 50px;
+    font-size: 20px;
+    margin: 10px auto;
+    background: var(--bg-color);
+    text-transform: capitalize;
+    padding: 6px 20px;
+    display: block;
+    border-radius: 5px;
+    border: 0;
+    transition: all 0.5s ease-in-out;
+    color: var(--white);
+    font-family: inherit;
+}
+
+.tasks-form input[type='submit']:hover {
+    transform: scale(1.15);
+    background: var(--bg-dark);
+}
+
+::placeholder {
+    color: var(--white);
+    opacity: 0.5;
+}
+
+@media (max-width: 700px) {
+    .task-list .title {
+        font-size: 1.2rem;
+    }
+    .task-list .body {
+        font-size: 1rem;
+    }
+}
